@@ -11,7 +11,7 @@ function Task({title, description, id, status: _status, onRemoveTask}) {
 
   useEffect(() => {
     getOperations(id, setOperations);
-  }, []);
+  }, [id]);
 
   const toggleOperationForm = () => {
     setOperationForm(prevState => !prevState);
