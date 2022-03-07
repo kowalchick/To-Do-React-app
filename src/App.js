@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from "react";
+import NewTask from "./components/NewTask";
+import Task from "./components/Task";
+import {getTasks} from "./api/tasks";
 
 function App() {
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    getTasks(setTasks);
+  }, []);
+
+  const handleAddNewTask = task => {
+    setTasks(prevTasks => {
+      return [
+        task,
+        ...prevTasks
+      ];
+    });
+  };
+
+  const handleRemoveTask = id => {
+    setTasks(prevState => prevState.filter(task => task.id !== id));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NewTask onNewTask={handleAddNewTask}/>
+
+      {tasks.map(task => {
+        return <Task key={task.id} {...task} onRemoveTask={handleRemoveTask}/>;
+      })}
+    </>
   );
-}
+};
 
 export default App;
