@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Hi people!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Link to demo of this site is [here](https://kowalchick.github.io/To_Do_React_app)
+
+## Short Description of my work
+
+This app is a task I was about to do on workshop3 on bootcamp JavaScript Developer after finishing the React module.
+
+All guidelines of this project I received from my school.  
+To compile all files I used webpack this time.
+
+Preparing this app I polished my skills related to React such as: creating components, communicating with the API, managing CSS classes in JSX and passing props to the components.
+Additionally, I practiced writing async/await syntax to work with promises. This JavaScript feature was added in ECMAScript2017 and my lectures has not cover this syntax yet.
+
+More advanced apps are coming soon.
+
+Enjoy!
 
 ## Available Scripts
 
