@@ -1,6 +1,6 @@
 # Hi people!
 
-Link to demo of this site is [here](https://kowalchick.github.io/To_Do_React_app)
+Link to demo of this site is [here](https://todo-app-kowalchick.netlify.app/)
 
 ## Short Description of my work
 
