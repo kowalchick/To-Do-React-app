@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "status": "open",
+      "description": "TypeScript"
+    },
+    {
+      "id": 2,
+      "status": "open",
+      "description": "Docker"
+    },
+    {
+      "id": 3,
+      "status": "open",
+      "description": "SQL"
+    },
+    {
+      "id": 4,
+      "status": "open",
+      "description": "SCURM"
+    }
+  ]
+}
